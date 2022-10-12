@@ -1,0 +1,12 @@
+
+.nav{
+    background-color: orange;
+    grid-area: n;
+}
+
+.item {
+    color: white;
+}
+.item.active {
+    color: gold;
+}
