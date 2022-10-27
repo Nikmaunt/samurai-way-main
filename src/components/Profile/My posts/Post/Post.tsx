@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './Post.module.css'
+
 type MessageType = {
     message:string
     likesCount: number
