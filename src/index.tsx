@@ -2,14 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import state from "./Redux/StateTs";
+import store from "./Redux/StateTs";
 
 
 
-
-ReactDOM.render(
-    <App state={state}
-    />,
-  document.getElementById('root')
-);
-
+ const rerenderEntireTree = () => {
+    ReactDOM.render(
+        <App store={store} addPost = {store. addPost.bind(store)} changePostText={store.changePostText}
+        />,
+        document.getElementById('root')
+    );
+}
+store.subscribe(rerenderEntireTree)
+rerenderEntireTree()

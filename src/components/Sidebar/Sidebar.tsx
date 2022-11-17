@@ -2,7 +2,7 @@ import React from 'react';
 import state from "../../Redux/StateTs";
 import Post from "../Profile/My posts/Post/Post";
 import {message} from "antd";
-import {Frineds} from "./Friends";
+
 
 export const Sidebar = (props:any) => {
     // let postsElemet = props.sidebar.map((p: { id: number; name: string; }) =>  <Post={p.id} likesCount={p.likesCount}/>)
