@@ -1,5 +1,5 @@
 import React from 'react';
-import state from "../../Redux/StateTs";
+import state from "../../Redux/Store";
 import Post from "../Profile/My posts/Post/Post";
 import {message} from "antd";
 

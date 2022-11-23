@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Profile.module.css'
 import Myposts, {PostsType} from "./My posts/Myposts";
 import {ProfileInfo} from "./ProfileInfo/ProfileInfo";
-import state, {ActionsTypes} from "../../Redux/StateTs";
+import state, {ActionsTypes} from "../../Redux/Store";
 
 export type PostsTypeArsen = {
     posts: PostsType[]

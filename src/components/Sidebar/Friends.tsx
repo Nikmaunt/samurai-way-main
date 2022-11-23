@@ -1,8 +1,8 @@
 import React from 'react';
 import s from "../Dialogs/Dialogs.module.css";
-import state from "../../Redux/StateTs";
+import state from "../../Redux/Store";
 import Post from "../Profile/My posts/Post/Post";
-import store from "../../Redux/StateTs";
+import store from "../../Redux/Store";
 
 
 export const Frineds = (props: any) => {

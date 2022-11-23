@@ -1,5 +1,5 @@
 import {profileReducer} from "./profile-reducer";
-import {sidebarReducer} from "./sidebar-reducer";
+// import {sidebarReducer} from "./sidebar-reducer";
 import {dialogsReducer} from "./dialogs-reducer";
 
 let rerenderEntireTree = () => {
@@ -109,6 +109,7 @@ export type RouteStateType = {
      subscribe: (observer: () =>void) => void
      getState:()=> RouteStateType
      dispatch:(action:ActionsTypes)=> void
+
  }
   export type ActionsTypes = ReturnType<typeof addPostAC> | ReturnType<typeof ChangeNewTextActionAC> | ReturnType<typeof UPDATE_NEW_MESSAGE_BODY_AC> | ReturnType<typeof SEND_MESSAGE_AC>
 
@@ -198,7 +199,7 @@ const store:StoreType =  {
     dispatch(action){
         profileReducer(  this._state.profilePage,action )
        dialogsReducer(  this._state.messagesPage,action )
-       sidebarReducer(  this._state.sidebar,action )
+       // sidebarReducer(  this._state.sidebar,action )
         this._callSubscriber()
 
 }
